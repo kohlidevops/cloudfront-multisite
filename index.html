@@ -7,13 +7,13 @@
     <title>My App</title>
   </head>
   <body>
-    <h2>My Old App</h2>
-    <button id="btnNewVersion">Try New Version</button>
+    <h2>My New App</h2>
+    <button id="btnOldVersion">No Thanks, Old is gold</button>
 
     <script>
-      const btnNewVersion = document.getElementById("btnNewVersion");
-      btnNewVersion.addEventListener("click", () => {
-        document.cookie = "version=new";
+      const btnOldVersion = document.getElementById("btnOldVersion");
+      btnOldVersion.addEventListener("click", () => {
+        document.cookie = "version=old";
         location.reload();
       });
     </script>
